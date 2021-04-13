@@ -19,7 +19,6 @@ wait (){
 while read -r -u3 LINE; do
   if [ -n "$LINE" ]; then
     echo "$ $LINE"
-    wait
     sh -c "$LINE"
     wait
   fi
